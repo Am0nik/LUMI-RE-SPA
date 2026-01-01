@@ -1,0 +1,237 @@
+*, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    
+    height: 80vh;
+    padding: 10px 0; 
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.15)), url("../images/header-background.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: auto; 
+    margin-top: auto;
+}
+
+
+main{
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.name {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.about-us{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-us-content {
+    margin: 0 auto;
+}
+
+.services{
+    background-color: rgb(255, 238, 199);
+}
+.services-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #08030D;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.masters{
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.masters-content {
+    gap: 20px;
+    justify-content: center;
+}
+
+.sign-up{
+    background-color: rgb(255, 238, 199);
+    padding: 20px;
+}
+.sign-up-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sign-up-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #08030D;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.sign-up-content input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+
+.sign-up-content select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+}
+.sign-up-content form button {
+    padding: 10px; 
+    background-color: rgb(220, 176, 0); 
+    border: none; 
+    color: white; 
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+.sign-up-content form button:hover {
+    background-color: #d8ba0a;
+    transform: scale(1.1);
+}
+
+.li-style{
+    display: flex;align-items: center; gap: 10px;justify-content: space-between;
+}
+
+.li-master-style{
+    display: flex;align-items: center; gap: 10px;justify-content: center;
+}
+
+
+
+
+.reveal {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.left {
+    transform: translateX(-100px);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+@media (min-width: 1600px) {
+    .services-content, .about-us-content, .masters-content, .sign-up-content {
+        padding: 60px;
+    }
+    .container {
+        max-width: 1400px;
+    }
+    html { 
+        font-size: 18px; 
+    } 
+}
+
+
+@media (max-width: 768px) {
+    header {
+        min-height: 60vh;
+    }
+
+    .li-style, .li-master-style {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .li-style img, .li-master-style img {
+        width: 100% !important; 
+        max-width: 300px; 
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .services-content, .about-us-content, .masters-content, .sign-up-content {
+        padding: 20px 10px;
+    }
+
+    .services-content {
+        display: block;
+    }
+
+
+    .li-style img {
+        width: 80% !important; 
+    }
+
+    .li-master-style img {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container, .services-content {
+        padding: 30px 15px;
+    }
+    
+    .name { 
+        font-size: 1.5rem; 
+    }
+
+    .sign-up-content input, .sign-up-content select {
+        font-size: 16px; 
+    }
+}
