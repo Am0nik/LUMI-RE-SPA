@@ -1,5 +1,5 @@
 # LUMI-RE-SPA
-Сайт визитка СПА-салона
-frontend.
-## О сайте
-Минималистичная страница СПА-салона. На странице есть блок "О нас", блок с услугами и матсерами, а так же форма записи на сеанс
+Spa salon brochure website (frontend)
+
+## About the site
+A minimalist spa salon webpage. The page features an "About Us" section, a section showcasing services and therapists, and an appointment booking form.
